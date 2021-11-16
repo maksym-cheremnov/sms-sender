@@ -2,7 +2,7 @@
     "compilerOptions": {
       "declaration": true,
       "module": "commonjs",
-      "types": ["reflect-metadata", "node"],
+      "types": ["reflect-metadata"],
       "esModuleInterop": true,
       "skipDefaultLibCheck": false,
       "allowSyntheticDefaultImports": true,

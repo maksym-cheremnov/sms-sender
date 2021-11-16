@@ -1,7 +1,7 @@
 import { inject, injectable } from "inversify";
 import 'reflect-metadata';
 import { HttpRequest, HttpResponse, StatusCode, Controller } from "httpController.types";
-import { TYPES } from "../../lib/IoC/types";
+import { TYPES } from "./../IoC/types";
 import { UseCase } from "useCase.types";
 import { AppError } from "../errors/appError";
 import { CommonErrors } from "../errors/errorCodes";

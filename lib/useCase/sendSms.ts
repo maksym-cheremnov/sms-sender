@@ -10,7 +10,7 @@ export class SendSMS implements UseCase {
   @inject(TYPES.SMSService)
   private _smsService: SMSService;
 
-  async execute(data: {text: string; phoneNumber: string}) {
+  async execute(data: { text: string; phoneNumber: string }) {
     await this._smsService.send(data.text, data.phoneNumber);
   }
 }

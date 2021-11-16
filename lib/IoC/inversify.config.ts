@@ -10,7 +10,7 @@ import {SendSMSController} from "../controllers/sendSms";
 const appContainer = new Container();
 
 appContainer.bind<SMSService>(TYPES.SMSService).to(SMSSender);
-appContainer.bind<Controller>(TYPES.SMSService).to(SendSMSController);
-appContainer.bind<UseCase>(TYPES.SMSService).to(SendSMS);
+appContainer.bind<Controller>(TYPES.SendSMSController).to(SendSMSController);
+appContainer.bind<UseCase>(TYPES.SendSMS).to(SendSMS);
 
 export {appContainer};
